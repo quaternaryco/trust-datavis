@@ -1,106 +1,106 @@
 callback([
 
 {
-            "hc-key": "al",
+            "code": "al",
             "value": 12.9855733082707
         }, {
-            "hc-key": "at",
+            "code": "at",
             "value": 30.5110465116279
         }, {
-            "hc-key": "be",
+            "code": "be",
             "value": 38.3160339660339
         }, {
-            "hc-key": "bg",
+            "code": "bg",
             "value": 29.6411530815109
         }, {
-            "hc-key": "cy",
+            "code": "cy",
             "value": 55.07556
         }, {
-            "hc-key": "cz",
+            "code": "cz",
             "value": 38.7887867298578
         }, {
-            "hc-key": "de",
+            "code": "de",
             "value": 30.314642484472
         }, {
-            "hc-key": "dk",
+            "code": "dk",
             "value": 21.4053386454183
         }, {
-            "hc-key": "ee",
+            "code": "ee",
             "value": 13.1905389221557
         }, {
-            "hc-key": "fi",
+            "code": "fi",
             "value": 18.3788622754491
         }, {
-            "hc-key": "fr",
+            "code": "fr",
             "value": 43.5957411067194
         }, {
-            "hc-key": "gr",
+            "code": "gr",
             "value": 69.6275520317146
         }, {
-            "hc-key": "hr",
+            "code": "hr",
             "value": 43.7161148977604
         }, {
-            "hc-key": "hu",
+            "code": "hu",
             "value": 30.6580207351555
         }, {
-            "hc-key": "is",
+            "code": "is",
             "value": 20.65206
         }, {
-            "hc-key": "ie",
+            "code": "ie",
             "value": 40.9956886227545
         }, {
-            "hc-key": "it",
+            "code": "it",
             "value": 47.4333858267717
         }, {
-            "hc-key": "lt",
+            "code": "lt",
             "value": 21.8064870259481
         }, {
-            "hc-key": "lu",
+            "code": "lu",
             "value": 21.9405917159763
         }, {
-            "hc-key": "lv",
+            "code": "lv",
             "value": 28.3231206380858
         }, {
-            "hc-key": "me",
+            "code": "me",
             "value": 24.5784141791045
         }, {
-            "hc-key": "mk",
+            "code": "mk",
             "value": 21.3719299905393
         }, {
-            "hc-key": "mt",
+            "code": "mt",
             "value": 15.2639328063241
         }, {
-            "hc-key": "nl",
+            "code": "nl",
             "value": 25.2448415841584
         }, {
-            "hc-key": "pl",
+            "code": "pl",
             "value": 23.4753727008713
         }, {
-            "hc-key": "pt",
+            "code": "pt",
             "value": 43.7363980099502
         }, {
-            "hc-key": "ro",
+            "code": "ro",
             "value": 25.6289292730845
         }, {
-            "hc-key": "rs",
+            "code": "rs",
             "value": 27.2205113077679
         }, {
-            "hc-key": "si",
+            "code": "si",
             "value": 43.7363479923518
         }, {
-            "hc-key": "sk",
+            "code": "sk",
             "value": 35.625168756027
         }, {
-            "hc-key": "es",
+            "code": "es",
             "value": 55.6788625592418
         }, {
-            "hc-key": "se",
+            "code": "se",
             "value": 16.3363343108504
         }, {
-            "hc-key": "tr",
+            "code": "tr",
             "value": 27.352520699172
         }, {
-            "hc-key": "gb",
+            "code": "gb",
             "value": 43.6407927107061
         }
 ]);
