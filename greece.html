@@ -29,11 +29,12 @@ $(function () {
                 text: 'Date'
             }
         },
-        yAxis: {
+                yAxis: {
             title: {
                 text: 'Percent of population'
             },
             min: 0, max: 100,
+            tickInterval: 25,
             labels: {
             formatter: function() {
                 return this.value + '%';
@@ -45,7 +46,7 @@ $(function () {
             pointFormat: '{point.x:%b %Y}: {point.y:.0f}%'
         },
         credits: {
-                text: 'Visualisation by Quaternary Consulting. Click for full references',
+                text: 'Visualisation by Quaternary Consulting',
                 href: 'http://www.quaternary.co',
         },
         plotOptions: {
@@ -55,7 +56,14 @@ $(function () {
                 }
             }
         },
+        
+ exporting: {
+            sourceWidth: 1920,
+            sourceHeight: 1080,
+            scale: 2
 
+        },
+        
     series: [{
       name: "Extreme distrust",
       type: 'areaspline',
