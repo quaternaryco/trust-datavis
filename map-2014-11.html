@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Levels of extreme distrust in Europe</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="http://code.highcharts.com/maps/highmaps.js"></script>
+<script src="http://code.highcharts.com/maps/modules/exporting.js"></script>
+<script src="http://code.highcharts.com/mapdata/custom/europe.js"></script>
+<script type="text/javascript" src="http://code.highcharts.com/modules/data.js"></script>
+
+
+<script>
+$(function () {
+
+    var data = [
+        {
+            "hc-key": "al",
+            "value": 12.9855733082707
+        },		{
+            "hc-key": "at",
+            "value": 30.5110465116279
+        },		{
+            "hc-key": "be",
+            "value": 38.3160339660339
+        },		{
+            "hc-key": "bg",
+            "value": 29.6411530815109
+        },		{
+            "hc-key": "cy",
+            "value": 55.07556
+        },		{
+            "hc-key": "cz",
+            "value": 38.7887867298578
+        },		{
+            "hc-key": "de",
+            "value": 30.314642484472
+        },		{
+            "hc-key": "dk",
+            "value": 21.4053386454183
+        },		{
+            "hc-key": "ee",
+            "value": 13.1905389221557
+        },		{
+            "hc-key": "fi",
+            "value": 18.3788622754491
+        },		{
+            "hc-key": "fr",
+            "value": 43.5957411067194
+        },		{
+            "hc-key": "gr",
+            "value": 69.6275520317146
+        },		{
+            "hc-key": "hr",
+            "value": 43.7161148977604
+        },		{
+            "hc-key": "hu",
+            "value": 30.6580207351555
+        },		{
+            "hc-key": "is",
+            "value": 20.65206
+        },		{
+            "hc-key": "ie",
+            "value": 40.9956886227545
+        },		{
+            "hc-key": "it",
+            "value": 47.4333858267717
+        },		{
+            "hc-key": "lt",
+            "value": 21.8064870259481
+        },		{
+            "hc-key": "lu",
+            "value": 21.9405917159763
+        },		{
+            "hc-key": "lv",
+            "value": 28.3231206380858
+        },		{
+            "hc-key": "me",
+            "value": 24.5784141791045
+        },		{
+            "hc-key": "mk",
+            "value": 21.3719299905393
+        },		{
+            "hc-key": "mt",
+            "value": 15.2639328063241
+        },		{
+            "hc-key": "nl",
+            "value": 25.2448415841584
+        },		{
+            "hc-key": "pl",
+            "value": 23.4753727008713
+        },		{
+            "hc-key": "pt",
+            "value": 43.7363980099502
+        },		{
+            "hc-key": "ro",
+            "value": 25.6289292730845
+        },		{
+            "hc-key": "rs",
+            "value": 27.2205113077679
+        },		{
+            "hc-key": "si",
+            "value": 43.7363479923518
+        },		{
+            "hc-key": "sk",
+            "value": 35.625168756027
+        },		{
+            "hc-key": "es",
+            "value": 55.6788625592418
+        },		{
+            "hc-key": "se",
+            "value": 16.3363343108504
+        },		{
+            "hc-key": "tr",
+            "value": 27.352520699172
+        },		{
+            "hc-key": "gb",
+            "value": 43.6407927107061
+        },"
+
+    // Initiate the chart
+    $('#container').highcharts('Map', {
+
+        title : {
+            text : 'Levels of distrust in Europe'
+        },
+
+        subtitle : {
+            text : 'May 2015'
+        },
+
+        mapNavigation: {
+            enabled: true,
+            buttonOptions: {
+                verticalAlign: 'bottom'
+            }
+        },
+
+        colorAxis: {
+            min: 0,
+            max: 85,
+            step: 10,
+            dataClassColor: "tween",
+            minColor: '#f8f8f2',
+            maxColor: '#d55121',
+            type: "linear"
+        },
+        
+        credits: {
+                text: 'Visualisation by Quaternary Consulting.',
+                href: 'http://www.quaternary.co',
+        },
+        
+        navigation: {
+            buttonOptions: {
+                theme: {
+                    'stroke-width': 0,
+                    r: 3,
+                    states: {
+                        hover: {
+                            fill: '#79a5a5'
+                        },
+                        select: {
+                            stroke: '#039',
+                            fill: '#79a5a5'
+                        }
+                    }
+                }
+            }
+        },
+        
+         exporting: {
+            sourceWidth: 1920,
+            sourceHeight: 1080,
+            scale: 2
+
+        },
+        
+        tooltip: {
+                backgroundColor: '#ffffff',
+                borderWidth: 1,
+                shadow: false,
+                useHTML: true,
+                pointFormat: '<span class="f32"><span class="flag {point.flag}"></span></span>'
+                    + ' {point.name}: <b>{point.value}</b>%'
+            },
+        
+        series : [{
+            data : data,
+            mapData: Highcharts.maps['custom/europe'],
+            joinBy: 'hc-key',
+            name: 'Percent of population that distrusts all four institutions',
+            states: {
+                hover: {
+                    color: '#d55121'
+                }
+            },
+            dataLabels: {
+                enabled: false,
+                format: '{point.name}'
+            }
+        }]
+    });
+});
+</script>
+
+<style>
+#container {
+    height: 800px; 
+    min-width: 310px; 
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+.loading {
+    margin-top: 10em;
+    text-align: center;
+    color: gray;
+}
+</style>
+
+</head>
+<body>
+
+<div id="container"></div>
+
+</body>
+</html>
