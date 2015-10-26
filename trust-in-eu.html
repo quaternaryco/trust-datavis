@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>United Kingdom: Levels of trust</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+<script>
+$(function () {
+    $('#container').highcharts({
+        chart: {
+            type: 'areaspline'
+
+        },
+
+        colors: ["#ea5241", "#79a5a5", "#e5e6d1","#ec7f74","#B7CCC1","#f2a9a2"], 
+        
+        title: {
+            text: 'Levels of trust in EU'
+        },
+
+        xAxis: {
+            type: 'datetime',
+            dateTimeLabelFormats: { // don't display the dummy year
+            },
+            title: {
+                text: 'Date'
+            }
+        },
+        yAxis: {
+            title: {
+                text: 'Percent of population'
+            },
+            min: 0, max: 100,
+            labels: {
+            formatter: function() {
+                return this.value + '%';
+            }
+      },
+        },
+        tooltip: {
+            headerFormat: '<b>{series.name}</b><br>',
+            pointFormat: '{point.x:%b %Y}: {point.y:.0f}%'
+        },
+        credits: {
+                text: 'Visualisation by Quaternary Consulting. Click for full references',
+                href: 'http://www.quaternary.co',
+        },
+        plotOptions: {
+            spline: {
+                marker: {
+                    enabled: true
+                }
+            },
+            series: {
+                stacking: 'normal'
+            }
+        },
+ exporting: {
+            sourceWidth: 1920,
+            sourceHeight: 1080,
+            scale: 2
+
+        },
+
+    series: [
+         {
+      name: "Highest level of trust",
+      color: '#f9d4d1',
+      marker: {
+                    enabled: false
+                },
+      data: [[Date.UTC(2004, 10, 1), 41.007978513834], [Date.UTC(2005, 4, 1), 41.4668332747703], [Date.UTC(2005, 10, 1), 38.5242412121212], [Date.UTC(2006, 4, 1), 38.8147106662482], [Date.UTC(2006, 9, 1), 44.350078276042], [Date.UTC(2007, 4, 1), 37.6895760039565], [Date.UTC(2007, 10, 1), 43.1282202415633], [Date.UTC(2008, 4, 1), 42.4208514074237], [Date.UTC(2008, 10, 1), 44.9438632709857], [Date.UTC(2009, 1, 1), 41.8984204024913], [Date.UTC(2009, 5, 1), 46.1439412230758], [Date.UTC(2009, 10, 1), 47.531517473525], [Date.UTC(2010, 4, 1), 47.5840795440729], [Date.UTC(2010, 10, 1), 50.7019004645228], [Date.UTC(2011, 4, 1), 39.7506158944281], [Date.UTC(2011, 10, 1), 41.8292434692873], [Date.UTC(2012, 4, 1), 38.5033103167707], [Date.UTC(2012, 10, 1), 42.1014409316173], [Date.UTC(2013, 4, 1), 41.5174779705376], [Date.UTC(2013, 10, 1), 38.5383226831803], [Date.UTC(2014, 4, 1), 42.1613588676217], [Date.UTC(2014, 10, 1), 42.4192689455487], [Date.UTC(2015, 4, 1), 45.2278089572989]]
+    }, {
+      name: "Lowest level of trust",
+      type: 'areaspline',
+      color: '#ffffff',
+      marker: {
+                    enabled: false
+                },
+      fillOpacity: 1.0,
+      data: [[Date.UTC(2004, 10, 1), 33.392312], [Date.UTC(2005, 4, 1), 26.9210332590943], [Date.UTC(2005, 10, 1), 24.9476637878788], [Date.UTC(2006, 4, 1), 31.1305040396341], [Date.UTC(2006, 9, 1), 25.6667209480122], [Date.UTC(2007, 4, 1), 35.19806], [Date.UTC(2007, 10, 1), 24.4951394422311], [Date.UTC(2008, 4, 1), 28.5204581163859], [Date.UTC(2008, 10, 1), 24.8074289755352], [Date.UTC(2009, 1, 1), 24.7231349315068], [Date.UTC(2009, 5, 1), 21.6839713017751], [Date.UTC(2009, 10, 1), 23.159232526475], [Date.UTC(2010, 4, 1), 20.4520004559271], [Date.UTC(2010, 10, 1), 20.3261887692308], [Date.UTC(2011, 4, 1), 21.90478], [Date.UTC(2011, 10, 1), 17.3732789634146], [Date.UTC(2012, 4, 1), 16.2459514942529], [Date.UTC(2012, 10, 1), 17.4805394605395], [Date.UTC(2013, 4, 1), 13.0186930693069], [Date.UTC(2013, 10, 1), 17.0925049701789], [Date.UTC(2014, 4, 1), 16.2350403495994], [Date.UTC(2014, 10, 1), 17.6554461821527], [Date.UTC(2015, 4, 1), 23.20234]]
+    },
+{
+      name: "Lithuania",
+    type: 'spline',
+      data: [[Date.UTC(2004, 10, 1), 68.4611566866268], [Date.UTC(2005, 4, 1), 55.7222352941176], [Date.UTC(2005, 10, 1), 53.886118627451], [Date.UTC(2006, 4, 1), 57.3008586849853], [Date.UTC(2006, 9, 1), 60.30945], [Date.UTC(2007, 4, 1), 64.577043222004], [Date.UTC(2007, 10, 1), 59.2350885826771], [Date.UTC(2008, 4, 1), 62.0943780607249], [Date.UTC(2008, 10, 1), 55.1816815034619], [Date.UTC(2009, 1, 1), 55.3442277227723], [Date.UTC(2009, 5, 1), 58.9028051181102], [Date.UTC(2009, 10, 1), 54.2239002932551], [Date.UTC(2010, 4, 1), 53.4935034347399], [Date.UTC(2010, 10, 1), 61.01615920398], [Date.UTC(2011, 4, 1), 52.5296198830409], [Date.UTC(2011, 10, 1), 50.2234210526315], [Date.UTC(2012, 4, 1), 47.4442492639842], [Date.UTC(2012, 10, 1), 48.7828459273798], [Date.UTC(2013, 4, 1), 51.0636054421768], [Date.UTC(2013, 10, 1), 52.5735825242718], [Date.UTC(2014, 4, 1), 57.5535566502463], [Date.UTC(2014, 10, 1), 59.163383233533], [Date.UTC(2015, 4, 1), 68.3795413758724]]
+    },
+        
+                ]
+    });
+});
+</script>
+
+</head>
+
+
+
+<body>
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+</body>
+</html>
