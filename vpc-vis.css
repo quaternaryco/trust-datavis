@@ -1,0 +1,12 @@
+@font-face {
+font-family: "GloberBold";
+src: url("https://www.viennapolicyconference.org/wp-content/uploads/2015/08/2EFFF2_0_0.eot");
+src: url("https://www.viennapolicyconference.org/wp-content/uploads/2015/08/2EFFF2_0_0.eot?#iefix") format("embedded-opentype"), 
+url("https://www.viennapolicyconference.org/wp-content/uploads/2015/08/2EFFF2_0_0.ttf") format("truetype");
+}
+@font-face {
+font-family: "GloberRegular";
+src: url("https://www.viennapolicyconference.org/wp-content/uploads/2015/08/2EFFF2_2_0.eot");
+src: url("https://www.viennapolicyconference.org/wp-content/uploads/2015/08/2EFFF2_2_0.eot?#iefix") format("embedded-opentype"), 
+url("https://www.viennapolicyconference.org/wp-content/uploads/2015/08/2EFFF2_2_0.ttf") format("truetype");
+}
