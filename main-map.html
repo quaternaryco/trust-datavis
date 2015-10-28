@@ -183,8 +183,7 @@ $(function () {
                 borderWidth: 1,
                 shadow: false,
                 useHTML: true,
-                pointFormat: '<span class="f32"><span class="flag {point.flag}"></span></span>'
-                    + ' {point.name}: <b>' + +Highcharts.numberFormat(this.point.value, 1, '.') + '</b>%'
+                pointFormat: '{point.name}: <b> {point.value:.0f}%</b>'
             },
         
         series : [{
