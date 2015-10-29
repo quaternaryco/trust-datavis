@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Poland: Levels of trust</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+<script>
+$(function () {
+    $('#container').highcharts({
+        chart: {
+            type: 'spline'
+        },
+
+        colors: ["#2d5a6d", "#ea5241", "#79a5a5", "#e5e6d1","#ec7f74","#B7CCC1","#f2a9a2"], 
+        
+        title: {
+            text: 'Poland: levels of trust in institutions'
+        },
+
+        xAxis: {
+            type: 'datetime',
+            dateTimeLabelFormats: { // don't display the dummy year
+            },
+            title: {
+                text: 'Date'
+            }
+        },
+        yAxis: {
+            title: {
+                text: 'Percent of population'
+            },
+            min: 0, max: 100,
+            tickInterval: 25,
+            labels: {
+            formatter: function() {
+                return this.value + '%';
+            }
+      },
+        },
+        tooltip: {
+            headerFormat: '<b>{series.name}</b><br>',
+            pointFormat: '{point.x:%b %Y}: {point.y:.0f}%'
+        },
+        credits: {
+                enabled: false,
+        },
+        plotOptions: {
+            spline: {
+                marker: {
+                    enabled: true
+                }
+            }
+        },
+        
+ exporting: {
+            sourceWidth: 1920,
+            sourceHeight: 1080,
+            scale: 2
+
+        },
+        
+    series: [{
+      name: "Extreme distrust",
+      type: 'areaspline',
+         marker: {
+                    enabled: false
+               },
+         color: '#E6ECED',         
+      data: [[Date.UTC(2004, 10, 1), 19.14394], [Date.UTC(2005, 4, 1), 28.16337], [Date.UTC(2005, 10, 1), 24.317309], [Date.UTC(2006, 4, 1), 22.143627], [Date.UTC(2006, 9, 1), 20.72342], [Date.UTC(2007, 10, 1), 15.89385], [Date.UTC(2008, 4, 1), 19.06067], [Date.UTC(2008, 10, 1), 24.58186], [Date.UTC(2009, 5, 1), 27.95387], [Date.UTC(2009, 10, 1), 26.68963], [Date.UTC(2010, 4, 1), 29.14241], [Date.UTC(2010, 10, 1), 23.98384], [Date.UTC(2011, 10, 1), 34.93389], [Date.UTC(2012, 4, 1), 42.05489], [Date.UTC(2012, 10, 1), 36.84928], [Date.UTC(2013, 4, 1), 46.73296], [Date.UTC(2013, 10, 1), 35.14278], [Date.UTC(2014, 4, 1), 35.625944055944], [Date.UTC(2014, 10, 1), 23.4753727008713], [Date.UTC(2015, 4, 1), 28.5245691382766]]
+    }, {
+      name: "National government",
+      data: [[Date.UTC(2004, 10, 1), 12.819881], [Date.UTC(2005, 4, 1), 11.130201], [Date.UTC(2005, 10, 1), 13.691134], [Date.UTC(2006, 4, 1), 22.337103], [Date.UTC(2006, 9, 1), 14.98518], [Date.UTC(2007, 4, 1), 18.50601], [Date.UTC(2007, 10, 1), 16.93916], [Date.UTC(2008, 4, 1), 25.6661], [Date.UTC(2008, 10, 1), 19.50775], [Date.UTC(2009, 1, 1), 26.62487], [Date.UTC(2009, 5, 1), 20.93304], [Date.UTC(2009, 10, 1), 15.74498], [Date.UTC(2010, 4, 1), 27.92908], [Date.UTC(2010, 10, 1), 28.72351], [Date.UTC(2011, 4, 1), 29.4253], [Date.UTC(2011, 10, 1), 28.06059], [Date.UTC(2012, 4, 1), 20.34283], [Date.UTC(2012, 10, 1), 23.38654], [Date.UTC(2013, 4, 1), 14.13787], [Date.UTC(2013, 10, 1), 19.11156], [Date.UTC(2014, 4, 1), 21.6250949050949], [Date.UTC(2014, 10, 1), 26.1339012584705], [Date.UTC(2015, 4, 1), 20.4735070140281]]
+    }, {
+      name: "Political parties",
+      data: [[Date.UTC(2004, 10, 1), 26.822522], [Date.UTC(2005, 4, 1), 4.542961], [Date.UTC(2005, 10, 1), 6.999684], [Date.UTC(2006, 4, 1), 9.315151], [Date.UTC(2006, 9, 1), 6.93831], [Date.UTC(2007, 10, 1), 8.17002], [Date.UTC(2008, 4, 1), 7.30492], [Date.UTC(2008, 10, 1), 7.05742], [Date.UTC(2009, 5, 1), 12.05397], [Date.UTC(2009, 10, 1), 7.21455], [Date.UTC(2010, 4, 1), 14.85444], [Date.UTC(2010, 10, 1), 12.1898], [Date.UTC(2011, 10, 1), 17.67015], [Date.UTC(2012, 4, 1), 16.41409], [Date.UTC(2012, 10, 1), 16.67083], [Date.UTC(2013, 4, 1), 10.0214], [Date.UTC(2013, 10, 1), 14.3415], [Date.UTC(2014, 4, 1), 12.5106693306693], [Date.UTC(2014, 10, 1), 13.4867182962246], [Date.UTC(2015, 4, 1), 12.6887374749499]]
+    }, {
+      name: "Parliament",
+      data: [[Date.UTC(2004, 10, 1), 8.438924], [Date.UTC(2005, 4, 1), 8.055488], [Date.UTC(2005, 10, 1), 11.788565], [Date.UTC(2006, 4, 1), 13.379348], [Date.UTC(2006, 9, 1), 11.45542], [Date.UTC(2007, 4, 1), 14.55679], [Date.UTC(2007, 10, 1), 10.26241], [Date.UTC(2008, 4, 1), 16.41785], [Date.UTC(2008, 10, 1), 13.09769], [Date.UTC(2009, 1, 1), 17.27386], [Date.UTC(2009, 5, 1), 17.52791], [Date.UTC(2009, 10, 1), 11.06332], [Date.UTC(2010, 4, 1), 23.73423], [Date.UTC(2010, 10, 1), 24.67725], [Date.UTC(2011, 4, 1), 25.93761], [Date.UTC(2011, 10, 1), 24.87245], [Date.UTC(2012, 4, 1), 17.76909], [Date.UTC(2012, 10, 1), 20.09026], [Date.UTC(2013, 4, 1), 12.9741], [Date.UTC(2013, 10, 1), 17.40268], [Date.UTC(2014, 4, 1), 20.1137262737263], [Date.UTC(2014, 10, 1), 20.8153920619555], [Date.UTC(2015, 4, 1), 16.557004008016]]
+    }, {
+      name: "EU",
+      data: [[Date.UTC(2004, 10, 1), 49.648055], [Date.UTC(2005, 4, 1), 51.895015], [Date.UTC(2005, 10, 1), 51.343695], [Date.UTC(2006, 4, 1), 58.172608], [Date.UTC(2006, 9, 1), 57.59895], [Date.UTC(2007, 4, 1), 68.40314], [Date.UTC(2007, 10, 1), 62.26565], [Date.UTC(2008, 4, 1), 59.44767], [Date.UTC(2008, 10, 1), 55.13915], [Date.UTC(2009, 1, 1), 49.99584], [Date.UTC(2009, 5, 1), 52.16178], [Date.UTC(2009, 10, 1), 52.27349], [Date.UTC(2010, 4, 1), 52.4829699999999], [Date.UTC(2010, 10, 1), 58.18641], [Date.UTC(2011, 4, 1), 52.33608], [Date.UTC(2011, 10, 1), 46.9051], [Date.UTC(2012, 4, 1), 41.07341], [Date.UTC(2012, 10, 1), 48.16082], [Date.UTC(2013, 4, 1), 38.92464], [Date.UTC(2013, 10, 1), 45.24089], [Date.UTC(2014, 4, 1), 40.6598101898102], [Date.UTC(2014, 10, 1), 49.2512391093902], [Date.UTC(2015, 4, 1), 47.8946793587174]]
+    }, {
+      name: "UN",
+      visible: false,
+      data: [[Date.UTC(2004, 10, 1), 58.815603], [Date.UTC(2005, 4, 1), 55.254563], [Date.UTC(2005, 10, 1), 55.042644], [Date.UTC(2006, 4, 1), 62.613156], [Date.UTC(2006, 9, 1), 57.73595], [Date.UTC(2007, 10, 1), 59.35999], [Date.UTC(2008, 4, 1), 58.5019699999999], [Date.UTC(2008, 10, 1), 52.171], [Date.UTC(2009, 5, 1), 54.76146], [Date.UTC(2009, 10, 1), 53.01848], [Date.UTC(2010, 4, 1), 53.0112], [Date.UTC(2010, 10, 1), 56.03832], [Date.UTC(2011, 4, 1), 54.35907], [Date.UTC(2011, 10, 1), 53.88727], [Date.UTC(2012, 4, 1), 49.26881], [Date.UTC(2012, 10, 1), 56.25966], [Date.UTC(2013, 4, 1), 49.96258], [Date.UTC(2013, 10, 1), 48.88605], [Date.UTC(2014, 4, 1), 41.7828371628371], [Date.UTC(2014, 10, 1), 52.4148886737657], [Date.UTC(2015, 4, 1), 49.162124248497]]
+    }, {
+      name: "Local and regional gov't",
+      visible: false,
+      data: [[Date.UTC(2008, 10, 1), 40.87574], [Date.UTC(2009, 10, 1), 44.71651], [Date.UTC(2010, 4, 1), 47.44344], [Date.UTC(2011, 10, 1), 46.64636], [Date.UTC(2012, 4, 1), 41.5179899999999], [Date.UTC(2012, 10, 1), 46.18569], [Date.UTC(2013, 4, 1), 37.95886], [Date.UTC(2013, 10, 1), 46.62613], [Date.UTC(2014, 4, 1), 34.343036963037], [Date.UTC(2014, 10, 1), 36.7775701839303], [Date.UTC(2015, 4, 1), 40.2338877755511]]
+    }, {
+      name: "Police",
+      visible: false,
+      data: [[Date.UTC(2004, 10, 1), 39.48748], [Date.UTC(2005, 10, 1), 44.572781], [Date.UTC(2006, 9, 1), 49.86209], [Date.UTC(2007, 10, 1), 56.4269399999999], [Date.UTC(2008, 4, 1), 48.85374], [Date.UTC(2010, 10, 1), 54.67716], [Date.UTC(2014, 10, 1), 56.1293417231365], [Date.UTC(2015, 4, 1), 51.3067434869739]]
+    }, {
+      name: "Army",
+      visible: false,
+      data: [[Date.UTC(2004, 10, 1), 71.198405], [Date.UTC(2005, 10, 1), 67.1081300000001], [Date.UTC(2006, 9, 1), 68.17755], [Date.UTC(2007, 10, 1), 75.5856400000001], [Date.UTC(2008, 4, 1), 66.3652800000001], [Date.UTC(2009, 10, 1), 64.15148], [Date.UTC(2010, 10, 1), 73.0856899999999], [Date.UTC(2014, 10, 1), 70.0587124878993], [Date.UTC(2015, 4, 1), 69.4339979959919]]
+    }, {
+      name: "Legal and justice",
+      visible: false,
+      data: [[Date.UTC(2004, 10, 1), 15.740746], [Date.UTC(2005, 4, 1), 23.09999], [Date.UTC(2005, 10, 1), 21.668412], [Date.UTC(2006, 4, 1), 29.222945], [Date.UTC(2006, 9, 1), 29.94615], [Date.UTC(2007, 10, 1), 37.80309], [Date.UTC(2008, 4, 1), 32.19808], [Date.UTC(2008, 10, 1), 36.2023], [Date.UTC(2009, 5, 1), 35.93957], [Date.UTC(2009, 10, 1), 31.27713], [Date.UTC(2010, 10, 1), 38.03511], [Date.UTC(2014, 10, 1), 40.8434656340755], [Date.UTC(2015, 4, 1), 40.6782865731463]]
+    }, {
+      name: "Written press",
+      visible: false,
+      data: [[Date.UTC(2004, 10, 1), 42.812889], [Date.UTC(2005, 10, 1), 45.422996], [Date.UTC(2006, 9, 1), 44.62404], [Date.UTC(2007, 4, 1), 42.01748], [Date.UTC(2007, 10, 1), 44.90212], [Date.UTC(2008, 4, 1), 41.83797], [Date.UTC(2009, 10, 1), 42.30697], [Date.UTC(2010, 10, 1), 40.45569], [Date.UTC(2011, 10, 1), 44.36107], [Date.UTC(2012, 10, 1), 45.28096], [Date.UTC(2013, 10, 1), 47.7945], [Date.UTC(2014, 10, 1), 45.7132526621491]]
+    }, {
+      name: "Radio",
+      visible: false,
+      data: [[Date.UTC(2004, 10, 1), 60.669017], [Date.UTC(2005, 10, 1), 60.620735], [Date.UTC(2006, 9, 1), 62.27515], [Date.UTC(2007, 4, 1), 62.31639], [Date.UTC(2007, 10, 1), 56.7856], [Date.UTC(2008, 4, 1), 56.79893], [Date.UTC(2009, 10, 1), 60.59615], [Date.UTC(2010, 10, 1), 56.85356], [Date.UTC(2011, 10, 1), 56.76747], [Date.UTC(2012, 10, 1), 58.82909], [Date.UTC(2013, 10, 1), 56.9689900000001], [Date.UTC(2014, 10, 1), 61.4140077444337]]
+    }, {
+      name: "TV",
+      visible: false,
+      data: [[Date.UTC(2004, 10, 1), 50.323075], [Date.UTC(2005, 10, 1), 56.0222680000001], [Date.UTC(2006, 9, 1), 52.75971], [Date.UTC(2007, 4, 1), 57.1345999999999], [Date.UTC(2007, 10, 1), 50.56103], [Date.UTC(2008, 4, 1), 51.53697], [Date.UTC(2009, 10, 1), 48.72835], [Date.UTC(2010, 10, 1), 50.21975], [Date.UTC(2011, 10, 1), 57.18273], [Date.UTC(2012, 10, 1), 53.66493], [Date.UTC(2013, 10, 1), 53.51139], [Date.UTC(2014, 10, 1), 55.5279864472411]]
+    }, {
+      name: "Internet",
+      visible: false,
+      data: [[Date.UTC(2006, 9, 1), 31.73937], [Date.UTC(2007, 4, 1), 38.59427], [Date.UTC(2007, 10, 1), 33.64544], [Date.UTC(2008, 4, 1), 34.6852], [Date.UTC(2009, 10, 1), 38.60933], [Date.UTC(2010, 10, 1), 37.29493], [Date.UTC(2011, 10, 1), 45.89184], [Date.UTC(2012, 10, 1), 46.13603], [Date.UTC(2013, 10, 1), 45.22685], [Date.UTC(2014, 10, 1), 46.1934462729913]]
+    }
+                ]
+    });
+});
+</script>
+
+</head>
+
+
+
+<body>
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+</body>
+</html>
