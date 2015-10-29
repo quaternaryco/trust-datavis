@@ -45,7 +45,10 @@ $(function () {
             headerFormat: '<b>{series.name}</b><br>',
             pointFormat: '{point.x:%b %Y}: {point.y:.0f}%'
         },
-
+        credits: {
+                text: 'Visualisation by Quaternary Consulting. Click for full references',
+                href: 'http://www.quaternary.co',
+        },
         plotOptions: {
             spline: {
                 marker: {
@@ -69,65 +72,54 @@ $(function () {
                },
          color: '#E6ECED',         
       data: [[Date.UTC(2014, 10, 1), 12.9855733082707], [Date.UTC(2015, 4, 1), 10.0074]]
-    },{
+    }, {
       name: "National government",
       data: [[Date.UTC(2014, 10, 1), 41.2430169172933], [Date.UTC(2015, 4, 1), 38.54959]]
     }, {
       name: "Political parties",
       data: [[Date.UTC(2014, 10, 1), 14.062697368421], [Date.UTC(2015, 4, 1), 15.90471]]
-    }, 
-{
+    }, {
       name: "Parliament",
       data: [[Date.UTC(2014, 10, 1), 35.368007518797], [Date.UTC(2015, 4, 1), 30.10684]]
-    },
-        {
+    }, {
       name: "EU",
       data: [[Date.UTC(2014, 10, 1), 59.4625187969924], [Date.UTC(2015, 4, 1), 68.0047800000001]]
-    },
-         {
+    }, {
       name: "UN",
       visible: false,
       data: [[Date.UTC(2014, 10, 1), 60.0922650375939], [Date.UTC(2015, 4, 1), 61.3350200000001]]
-    },
-                      {
+    }, {
       name: "Local and regional gov't",
       visible: false,
       data: [[Date.UTC(2014, 10, 1), 27.0733176691729], [Date.UTC(2015, 4, 1), 32.98042]]
-    },
-                {
+    }, {
       name: "Police",
       visible: false,
       data: [[Date.UTC(2014, 10, 1), 46.9700563909775], [Date.UTC(2015, 4, 1), 56.13377]]
-    },
-    {
+    }, {
       name: "Army",
       visible: false,
       data: [[Date.UTC(2014, 10, 1), 47.3781954887219], [Date.UTC(2015, 4, 1), 57.58303]]
-    },
-             {
+    }, {
       name: "Legal and justice",
       visible: false,
       data: [[Date.UTC(2014, 10, 1), 20.7554417293233], [Date.UTC(2015, 4, 1), 30.97025]]
-    },             
-        {
+    }, {
       name: "Written press",
       visible: false,
       data: [[Date.UTC(2014, 10, 1), 48.5072368421053]]
-    },
-             {
+    }, {
       name: "Radio",
       visible: false,
       data: [[Date.UTC(2014, 10, 1), 37.9616259398496]]
-    },
-         {
+    }, {
       name: "TV",
       visible: false,
       data: [[Date.UTC(2014, 10, 1), 67.7927161654136]]
-    },
-         {
+    }, {
       name: "Internet",
       visible: false,
-      data: [[[Date.UTC(2014, 10, 1), 44.1765789473685]]
+      data: [[Date.UTC(2014, 10, 1), 44.1765789473685]]
     }
                 ]
     });
