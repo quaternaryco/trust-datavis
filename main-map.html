@@ -179,12 +179,12 @@ $(function () {
         },
         
         tooltip: {
-                backgroundColor: '#ffffff',
-                borderWidth: 1,
-                shadow: false,
-                useHTML: true,
-                pointFormat: '{point.name}: <b> {point.value:.0f}%</b>'
-            },
+            useHTML: true,
+            headerFormat: '<iframe height=400px src="http://quaternaryco.github.io/trust-datavis/',
+            pointFormat: '{point.name}',
+            footerFormat: '.html"></iframe>',
+            
+},
         
         series : [{
             data : data,
