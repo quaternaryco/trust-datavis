@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Iceland: Levels of trust</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+<script>
+$(function () {
+    $('#container').highcharts({
+        chart: {
+            type: 'spline'
+        },
+
+        colors: ["#2d5a6d", "#ea5241", "#79a5a5", "#e5e6d1","#ec7f74","#B7CCC1","#f2a9a2"], 
+        
+        title: {
+            text: 'Iceland: levels of trust in institutions'
+        },
+
+        xAxis: {
+            type: 'datetime',
+            dateTimeLabelFormats: { // don't display the dummy year
+            },
+            title: {
+                text: 'Date'
+            }
+        },
+        yAxis: {
+            title: {
+                text: 'Percent of population'
+            },
+            min: 0, max: 100,
+            tickInterval: 25,
+            labels: {
+            formatter: function() {
+                return this.value + '%';
+            }
+      },
+        },
+        tooltip: {
+            headerFormat: '<b>{series.name}</b><br>',
+            pointFormat: '{point.x:%b %Y}: {point.y:.0f}%'
+        },
+        credits: {
+                enabled: false,
+        },
+        plotOptions: {
+            spline: {
+                marker: {
+                    enabled: true
+                }
+            }
+        },
+        
+ exporting: {
+            sourceWidth: 1920,
+            sourceHeight: 1080,
+            scale: 2
+
+        },
+        
+    series: [{
+      name: "Extreme distrust",
+      type: 'areaspline',
+         marker: {
+                    enabled: false
+               },
+         color: '#E6ECED',         
+      data: [[Date.UTC(2010, 4, 1), 29.83463878327], [Date.UTC(2010, 10, 1), 33.542754491018], [Date.UTC(2011, 10, 1), 39.70758], [Date.UTC(2012, 4, 1), 42.0788800000001], [Date.UTC(2012, 10, 1), 37.1609362549801], [Date.UTC(2013, 4, 1), 18.5100978473581], [Date.UTC(2013, 10, 1), 26.49642], [Date.UTC(2014, 4, 1), 17.5127145708583], [Date.UTC(2014, 10, 1), 20.65206]]
+    }, {
+      name: "National government",
+      data: [[Date.UTC(2010, 4, 1), 33.4869011406844], [Date.UTC(2010, 10, 1), 27.7976047904192], [Date.UTC(2011, 4, 1), 36.99674], [Date.UTC(2011, 10, 1), 26.0863], [Date.UTC(2012, 4, 1), 25.945], [Date.UTC(2012, 10, 1), 30.743764940239], [Date.UTC(2013, 4, 1), 47.3693346379648], [Date.UTC(2013, 10, 1), 29.6532], [Date.UTC(2014, 4, 1), 38.5936726546906], [Date.UTC(2014, 10, 1), 32.86522]]
+    }, {
+      name: "Political parties",
+      data: [[Date.UTC(2010, 4, 1), 13.2941254752852], [Date.UTC(2010, 10, 1), 11.7953892215569], [Date.UTC(2011, 10, 1), 13.42726], [Date.UTC(2012, 4, 1), 14.21452], [Date.UTC(2012, 10, 1), 15.4078884462151], [Date.UTC(2013, 4, 1), 34.1459099804305], [Date.UTC(2013, 10, 1), 20.48384], [Date.UTC(2014, 4, 1), 27.3738323353293], [Date.UTC(2014, 10, 1), 20.71304]]
+    }, {
+      name: "Parliament",
+      data: [[Date.UTC(2010, 4, 1), 33.8420912547529], [Date.UTC(2010, 10, 1), 27.6468063872256], [Date.UTC(2011, 4, 1), 36.07964], [Date.UTC(2011, 10, 1), 27.2719], [Date.UTC(2012, 4, 1), 25.0035], [Date.UTC(2012, 10, 1), 31.7343824701195], [Date.UTC(2013, 4, 1), 57.1285909980431], [Date.UTC(2013, 10, 1), 40.3845], [Date.UTC(2014, 4, 1), 51.8130538922156], [Date.UTC(2014, 10, 1), 42.2917]]
+    }, {
+      name: "EU",
+      data: [[Date.UTC(2010, 4, 1), 34.6589733840304], [Date.UTC(2010, 10, 1), 40.7570259481038], [Date.UTC(2011, 4, 1), 40.85264], [Date.UTC(2011, 10, 1), 31.8665], [Date.UTC(2012, 4, 1), 33.303], [Date.UTC(2012, 10, 1), 33.7115537848605], [Date.UTC(2013, 4, 1), 39.5963600782779], [Date.UTC(2013, 10, 1), 40.2523], [Date.UTC(2014, 4, 1), 42.6071856287426], [Date.UTC(2014, 10, 1), 49.0978]]
+    }, {
+      name: "UN",
+      visible: false,
+      data: [[Date.UTC(2010, 4, 1), 82.4432699619773], [Date.UTC(2010, 10, 1), 84.0542115768463], [Date.UTC(2011, 4, 1), 79.7477800000001], [Date.UTC(2011, 10, 1), 78.10324], [Date.UTC(2012, 4, 1), 78.78346], [Date.UTC(2012, 10, 1), 74.5230278884461], [Date.UTC(2013, 4, 1), 81.47228962818], [Date.UTC(2013, 10, 1), 79.3887000000001], [Date.UTC(2014, 4, 1), 83.4254491017964], [Date.UTC(2014, 10, 1), 82.2921]]
+    }, {
+      name: "Local and regional gov't",
+      visible: false,
+      data: [[Date.UTC(2010, 4, 1), 52.0273764258556], [Date.UTC(2011, 10, 1), 51.71218], [Date.UTC(2012, 4, 1), 63.89404], [Date.UTC(2012, 10, 1), 62.5254183266932], [Date.UTC(2013, 4, 1), 74.757240704501], [Date.UTC(2013, 10, 1), 63.98144], [Date.UTC(2014, 4, 1), 74.7357285429142], [Date.UTC(2014, 10, 1), 63.04486]]
+    }, {
+      name: "Police",
+      visible: false,
+      data: [[Date.UTC(2010, 10, 1), 91.9331536926148], [Date.UTC(2014, 10, 1), 93.84202]]
+    }, {
+      name: "Army",
+      visible: false,
+      data: [[Date.UTC(2010, 10, 1), 26.3228343313373], [Date.UTC(2014, 10, 1), 27.91828]]
+    }, {
+      name: "Legal and justice",
+      visible: false,
+      data: [[Date.UTC(2010, 10, 1), 61.0376646706587], [Date.UTC(2014, 10, 1), 65.19502]]
+    }, {
+      name: "Written press",
+      visible: false,
+      data: [[Date.UTC(2010, 10, 1), 46.7770259481038], [Date.UTC(2011, 10, 1), 52.4392], [Date.UTC(2012, 10, 1), 52.4777290836653], [Date.UTC(2013, 10, 1), 59.8486800000001], [Date.UTC(2014, 10, 1), 56.5167]]
+    }, {
+      name: "Radio",
+      visible: false,
+      data: [[Date.UTC(2010, 10, 1), 75.6409181636726], [Date.UTC(2011, 10, 1), 79.1892], [Date.UTC(2012, 10, 1), 77.5117729083664], [Date.UTC(2013, 10, 1), 79.3055200000001], [Date.UTC(2014, 10, 1), 81.77926]]
+    }, {
+      name: "TV",
+      visible: false,
+      data: [[Date.UTC(2010, 10, 1), 70.3242914171657], [Date.UTC(2011, 10, 1), 76.8121599999999], [Date.UTC(2012, 10, 1), 74.346513944223], [Date.UTC(2013, 10, 1), 75.4598800000001], [Date.UTC(2014, 10, 1), 78.26422]]
+    }, {
+      name: "Internet",
+      visible: false,
+      data: [[Date.UTC(2010, 10, 1), 47.0217964071857], [Date.UTC(2011, 10, 1), 39.5505], [Date.UTC(2012, 10, 1), 46.8527290836653], [Date.UTC(2013, 10, 1), 45.41066], [Date.UTC(2014, 10, 1), 42.77294]]
+    }
+                ]
+    });
+});
+</script>
+
+</head>
+
+
+
+<body>
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+</body>
+</html>
