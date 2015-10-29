@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Serbia: Levels of trust</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+<script>
+$(function () {
+    $('#container').highcharts({
+        chart: {
+            type: 'spline'
+        },
+
+        colors: ["#2d5a6d", "#ea5241", "#79a5a5", "#e5e6d1","#ec7f74","#B7CCC1","#f2a9a2"], 
+        
+        title: {
+            text: 'Serbia: levels of trust in institutions'
+        },
+
+        xAxis: {
+            type: 'datetime',
+            dateTimeLabelFormats: { // don't display the dummy year
+            },
+            title: {
+                text: 'Date'
+            }
+        },
+        yAxis: {
+            title: {
+                text: 'Percent of population'
+            },
+            min: 0, max: 100,
+            tickInterval: 25,
+            labels: {
+            formatter: function() {
+                return this.value + '%';
+            }
+      },
+        },
+        tooltip: {
+            headerFormat: '<b>{series.name}</b><br>',
+            pointFormat: '{point.x:%b %Y}: {point.y:.0f}%'
+        },
+        credits: {
+                enabled: false,
+        },
+        plotOptions: {
+            spline: {
+                marker: {
+                    enabled: true
+                }
+            }
+        },
+        
+ exporting: {
+            sourceWidth: 1920,
+            sourceHeight: 1080,
+            scale: 2
+
+        },
+        
+    series: [{
+      name: "Extreme distrust",
+      type: 'areaspline',
+         marker: {
+                    enabled: false
+               },
+         color: '#E6ECED',         
+      data: [[Date.UTC(2012, 4, 1), 45.1255294117648], [Date.UTC(2012, 10, 1), 47.6500483558994], [Date.UTC(2013, 4, 1), 46.7043141153082], [Date.UTC(2013, 10, 1), 43.1141392649903], [Date.UTC(2014, 4, 1), 25.0801117318436], [Date.UTC(2014, 10, 1), 27.2205113077679], [Date.UTC(2015, 4, 1), 25.979763546798]]
+    }, {
+      name: "National government",
+      data: [[Date.UTC(2012, 4, 1), 22.687931372549], [Date.UTC(2012, 10, 1), 22.8878433268859], [Date.UTC(2013, 4, 1), 27.1898310139165], [Date.UTC(2013, 10, 1), 30.1074468085106], [Date.UTC(2014, 4, 1), 47.4379702048417], [Date.UTC(2014, 10, 1), 39.1812389380531], [Date.UTC(2015, 4, 1), 39.2229359605912]]
+    }, {
+      name: "Political parties",
+      data: [[Date.UTC(2012, 4, 1), 20.2023921568628], [Date.UTC(2012, 10, 1), 12.7457446808511], [Date.UTC(2013, 4, 1), 13.7773260437376], [Date.UTC(2013, 10, 1), 10.9677176015474], [Date.UTC(2014, 4, 1), 15.6100744878957], [Date.UTC(2014, 10, 1), 10.5109931170108], [Date.UTC(2015, 4, 1), 11.475645320197]]
+    }, {
+      name: "Parliament",
+      data: [[Date.UTC(2012, 4, 1), 19.975568627451], [Date.UTC(2012, 10, 1), 21.3373984526112], [Date.UTC(2013, 4, 1), 22.6503976143141], [Date.UTC(2013, 10, 1), 21.2083752417795], [Date.UTC(2014, 4, 1), 35.8856983240223], [Date.UTC(2014, 10, 1), 30.1697345132744], [Date.UTC(2015, 4, 1), 27.5785320197044]]
+    }, {
+      name: "EU",
+      data: [[Date.UTC(2012, 4, 1), 36.9406470588235], [Date.UTC(2012, 10, 1), 31.752669245648], [Date.UTC(2013, 4, 1), 32.6817495029822], [Date.UTC(2013, 10, 1), 30.9638491295938], [Date.UTC(2014, 4, 1), 38.4763966480447], [Date.UTC(2014, 10, 1), 35.4166764995084], [Date.UTC(2015, 4, 1), 42.9041280788177]]
+    }, {
+      name: "UN",
+      visible: false,
+      data: [[Date.UTC(2012, 4, 1), 32.4062156862745], [Date.UTC(2012, 10, 1), 30.495754352031], [Date.UTC(2013, 4, 1), 31.1349502982108], [Date.UTC(2013, 10, 1), 30.7569052224371], [Date.UTC(2014, 4, 1), 32.2410148975791], [Date.UTC(2014, 10, 1), 31.7840314650934], [Date.UTC(2015, 4, 1), 35.8689359605911]]
+    }, {
+      name: "Local and regional gov't",
+      visible: false,
+      data: [[Date.UTC(2012, 4, 1), 23.6466764705882], [Date.UTC(2012, 10, 1), 20.8351257253385], [Date.UTC(2013, 4, 1), 17.673787276342], [Date.UTC(2013, 10, 1), 18.015251450677], [Date.UTC(2014, 4, 1), 19.9410148975791], [Date.UTC(2014, 10, 1), 17.2563618485742], [Date.UTC(2015, 4, 1), 19.0085812807882]]
+    }, {
+      name: "Police",
+      visible: false,
+      data: [[Date.UTC(2014, 10, 1), 44.7599606686333], [Date.UTC(2015, 4, 1), 46.8291428571429]]
+    }, {
+      name: "Army",
+      visible: false,
+      data: [[Date.UTC(2014, 10, 1), 65.2108652900689], [Date.UTC(2015, 4, 1), 66.967842364532]]
+    }, {
+      name: "Legal and justice",
+      visible: false,
+      data: [[Date.UTC(2014, 10, 1), 23.9581120943953], [Date.UTC(2015, 4, 1), 37.4622660098522]]
+    }, {
+      name: "Written press",
+      visible: false,
+      data: [[Date.UTC(2012, 10, 1), 36.4441876208897], [Date.UTC(2013, 10, 1), 36.4674564796905], [Date.UTC(2014, 10, 1), 28.8987512291052]]
+    }, {
+      name: "Radio",
+      visible: false,
+      data: [[Date.UTC(2012, 10, 1), 34.9064313346228], [Date.UTC(2013, 10, 1), 36.4341972920696], [Date.UTC(2014, 10, 1), 33.546017699115]]
+    }, {
+      name: "TV",
+      visible: false,
+      data: [[Date.UTC(2012, 10, 1), 39.6232205029013], [Date.UTC(2013, 10, 1), 45.7152611218568], [Date.UTC(2014, 10, 1), 46.7759193706981]]
+    }, {
+      name: "Internet",
+      visible: false,
+      data: [[Date.UTC(2012, 10, 1), 36.2155996131528], [Date.UTC(2013, 10, 1), 41.8494584139264], [Date.UTC(2014, 10, 1), 38.7654670599803]]
+    }
+                ]
+    });
+});
+</script>
+
+</head>
+
+
+
+<body>
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+</body>
+</html>
