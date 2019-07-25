@@ -1,0 +1,316 @@
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2019//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_190101.dtd">
+<PubmedArticleSet>
+
+<PubmedArticle>
+    <MedlineCitation Status="In-Data-Review" Owner="NLM">
+        <PMID Version="1">31340398</PMID>
+        <DateRevised>
+            <Year>2019</Year>
+            <Month>07</Month>
+            <Day>24</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1869-0327</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>10</Volume>
+                    <Issue>3</Issue>
+                    <PubDate>
+                        <Year>2019</Year>
+                        <Month>May</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Applied clinical informatics</Title>
+                <ISOAbbreviation>Appl Clin Inform</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Linking Quality Improvement and Health Information Technology through the QI-HIT Figure 8.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>528-533</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1055/s-0039-1693456</ELocationID>
+            <Abstract>
+                <AbstractText>The implementation of health information technology (HIT) is complex. A method for mitigating complexity is incrementalism. Incrementalism forms the foundation of both incremental software development models, like agile, and the Plan-Do-Study-Act cycles (PDSAs) of quality improvement (QI), yet we often fail to be incremental at the union of the disciplines. We propose a new model for HIT implementation that explicitly links incremental software development cycles with PDSAs, the QI-HIT Figure 8 (QIHIT-F8). We then detail a subsequent local HIT implementation where we demonstrated its use. The QIHIT-F8 requires a reprioritization of project management activities around tests of change, strong QI principles to detect these changes, and the presence of both baseline and prospective data about the chosen indicators. These conditions are most likely to be present when applied to indicators of high strategic importance to an organization.</AbstractText>
+                <CopyrightInformation>Georg Thieme Verlag KG Stuttgart Â· New York.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y" EqualContrib="N">
+                    <LastName>Jamieson</LastName>
+                    <ForeName>Trevor</ForeName>
+                    <Initials>T</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>General Internal Medicine, St. Michael's Hospital, Toronto, Ontario, Canada.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Women's College Hospital Institute for Health Systems Solutions and Virtual Care (WIHV), Toronto, Ontario, Canada.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Medicine, University of Toronto, Toronto, Ontario, Canada.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y" EqualContrib="N">
+                    <LastName>Mamdani</LastName>
+                    <ForeName>Muhammad M</ForeName>
+                    <Initials>MM</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Li Ka Shing Centre for Healthcare Analytics Research and Training (LKS-CHART), St Michael's Hospital, Toronto, Ontario, Canada.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y" EqualContrib="N">
+                    <LastName>Etchells</LastName>
+                    <ForeName>Edward</ForeName>
+                    <Initials>E</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Centre for Quality Improvement and Patient Safety, Department of Medicine, Sunnybrook Health Sciences Centre, Toronto, Ontario, Canada.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2019</Year>
+                <Month>07</Month>
+                <Day>24</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>Germany</Country>
+            <MedlineTA>Appl Clin Inform</MedlineTA>
+            <NlmUniqueID>101537732</NlmUniqueID>
+            <ISSNLinking>1869-0327</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <CoiStatement>None declared.</CoiStatement>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2019</Year>
+                <Month>7</Month>
+                <Day>25</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2019</Year>
+                <Month>7</Month>
+                <Day>25</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2019</Year>
+                <Month>7</Month>
+                <Day>25</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">31340398</ArticleId>
+            <ArticleId IdType="doi">10.1055/s-0039-1693456</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+
+<PubmedArticle>
+    <MedlineCitation Status="Publisher" Owner="NLM">
+        <PMID Version="1">31340237</PMID>
+        <DateRevised>
+            <Year>2019</Year>
+            <Month>07</Month>
+            <Day>24</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1678-4170</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <PubDate>
+                        <Year>2019</Year>
+                        <Month>Jul</Month>
+                        <Day>18</Day>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Arquivos brasileiros de cardiologia</Title>
+                <ISOAbbreviation>Arq. Bras. Cardiol.</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Quality of Intra-Hospital Nutritional Counseling in Patients with STEMI in the Public and Private Health Networks of Sergipe: The VICTIM Register.</ArticleTitle>
+            <ELocationID EIdType="pii" ValidYN="Y">S0066-782X2019005001204</ELocationID>
+            <ELocationID EIdType="doi" ValidYN="Y">10.5935/abc.20190124</ELocationID>
+            <Abstract>
+                <AbstractText Label="BACKGROUND" NlmCategory="BACKGROUND">Having appropriate dietary habits is part of the recommendations after ST-Elevation Myocardial Infarction (STEMI), however, the quality of intra-hospital nutritional counselling in the different health services has been minimally explored.</AbstractText>
+                <AbstractText Label="OBJECTIVE" NlmCategory="OBJECTIVE">To evaluate the quality of intra-hospital nutritional counselling among patients with STEMI in the public and private health systems in Sergipe.</AbstractText>
+                <AbstractText Label="METHODS" NlmCategory="METHODS">A cross-sectional, with data from the Via Crucis for the Treatment of Myocardial Infarction (VICTIM) Register, conducted from April to November of 2017, with individuals aged â‰¥ 18 years diagnosed with STEMI, in one public health service hospital and three private hospitals. The occurrence and quality of nutritional counselling were analyzed based on current guidelines and the administration of questionnaires. A significance level of 0.05 was adopted.</AbstractText>
+                <AbstractText Label="RESULTS" NlmCategory="RESULTS">A total of 188 patients were analyzed; 80.3% were from the public health service facility. Among the interviewees, 57.6% of the public health service, and 70.3% of the private hospital patients received intra-hospital nutritional counselling (p = 0.191). The documentation of this practice, in medical records, was lower in the public service (2.6% vs. 37.8%, p &lt; 0.001). A predominance of restrictive orientations was found in the public and private sectors, mainly regarding salt and fat, 52.3% and 70.3% respectively (p = 0.064). Patients from the private service were more counselling to introduce of cardioprotective foods, mainly fruit, vegetable/legume consumption (48.6% vs. 13.2%, p &lt; 0.001). Among those who received counselling, nutritional knowledge was higher in the private sector (68.2% vs. 26.3%, p &lt; 0.001).</AbstractText>
+                <AbstractText Label="CONCLUSION" NlmCategory="CONCLUSIONS">The intra-hospital nutritional counselling provided to patients with STEMI, in Sergipe, still presents poor quality in both services, especially in the public health system.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Lima</LastName>
+                    <ForeName>Ticiane Clair Remacre Munareto</ForeName>
+                    <Initials>TCRM</Initials>
+                    <Identifier Source="ORCID">http://orcid.org/0000-0002-8022-3727</Identifier>
+                    <AffiliationInfo>
+                        <Affiliation>Universidade Federal de Sergipe - Programa de PÃ³s-GraduaÃ§Ã£o em CiÃªncias da SaÃºde, SÃ£o CristÃ³vÃ£o, SE - Brazil.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Silva</LastName>
+                    <ForeName>Danielle GÃ³es da</ForeName>
+                    <Initials>DGD</Initials>
+                    <Identifier Source="ORCID">http://orcid.org/0000-0002-2859-0853</Identifier>
+                    <AffiliationInfo>
+                        <Affiliation>Universidade Federal de Sergipe - Departamento de NutriÃ§Ã£o, SÃ£o CristÃ³vÃ£o, SE - Brazil.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Barreto</LastName>
+                    <ForeName>Ikaro Daniel de Carvalho</ForeName>
+                    <Initials>IDC</Initials>
+                    <Identifier Source="ORCID">http://orcid.org/0000-0001-7253-806X</Identifier>
+                    <AffiliationInfo>
+                        <Affiliation>Universidade Federal Rural de Pernambuco - NÃºcleo de PÃ³s-graduaÃ§Ã£o em Biometria e EstatÃ­stica Aplicada, Recife, PE - Brazil.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Oliveira</LastName>
+                    <ForeName>Jussiely Cunha</ForeName>
+                    <Initials>JC</Initials>
+                    <Identifier Source="ORCID">http://orcid.org/0000-0001-6782-8994</Identifier>
+                    <AffiliationInfo>
+                        <Affiliation>Universidade Federal de Sergipe - Programa de PÃ³s-GraduaÃ§Ã£o em Enfermagem, SÃ£o CristÃ³vÃ£o, SE - Brazil.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Universidade Tiradentes, Aracaju, SE - Brazil.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Oliveira</LastName>
+                    <ForeName>LaÃ­s Costa Souza</ForeName>
+                    <Initials>LCS</Initials>
+                    <Identifier Source="ORCID">http://orcid.org/0000-0001-7291-1127</Identifier>
+                    <AffiliationInfo>
+                        <Affiliation>Universidade Federal de Sergipe - Programa de PÃ³s-GraduaÃ§Ã£o em CiÃªncias da SaÃºde, SÃ£o CristÃ³vÃ£o, SE - Brazil.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Hospital Primavera, Aracaju, SE - Brazil.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Arcelino</LastName>
+                    <ForeName>Larissa Andreline Maia</ForeName>
+                    <Initials>LAM</Initials>
+                    <Identifier Source="ORCID">http://orcid.org/0000-0001-7484-3260</Identifier>
+                    <AffiliationInfo>
+                        <Affiliation>Universidade Federal de Sergipe - Programa de PÃ³s-GraduaÃ§Ã£o em CiÃªncias da SaÃºde, SÃ£o CristÃ³vÃ£o, SE - Brazil.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Oliveira</LastName>
+                    <ForeName>Jeferson Cunha</ForeName>
+                    <Initials>JC</Initials>
+                    <Identifier Source="ORCID">http://orcid.org/0000-0002-3578-6379</Identifier>
+                    <AffiliationInfo>
+                        <Affiliation>Universidade Federal de Sergipe - Programa de PÃ³s-GraduaÃ§Ã£o em CiÃªncias da SaÃºde, SÃ£o CristÃ³vÃ£o, SE - Brazil.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Hospital Primavera, Aracaju, SE - Brazil.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Sousa</LastName>
+                    <ForeName>AntÃ´nio Carlos Sobral</ForeName>
+                    <Initials>ACS</Initials>
+                    <Identifier Source="ORCID">http://orcid.org/0000-0002-4158-9726</Identifier>
+                    <AffiliationInfo>
+                        <Affiliation>Universidade Federal de Sergipe - Programa de PÃ³s-GraduaÃ§Ã£o em CiÃªncias da SaÃºde, SÃ£o CristÃ³vÃ£o, SE - Brazil.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Universidade Federal de Sergipe - Departamento de Medicina, SÃ£o CristÃ³vÃ£o, SE - Brazil.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>FundaÃ§Ã£o SÃ£o Lucas - Centro de Ensino e Pesquisa, Aracaju, SE - Brazil.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Barreto Filho</LastName>
+                    <ForeName>JosÃ© Augusto Soares</ForeName>
+                    <Initials>JAS</Initials>
+                    <Identifier Source="ORCID">http://orcid.org/0000-0003-3552-6160</Identifier>
+                    <AffiliationInfo>
+                        <Affiliation>Universidade Federal de Sergipe - Programa de PÃ³s-GraduaÃ§Ã£o em CiÃªncias da SaÃºde, SÃ£o CristÃ³vÃ£o, SE - Brazil.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Universidade Federal de Sergipe - Departamento de Medicina, SÃ£o CristÃ³vÃ£o, SE - Brazil.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>FundaÃ§Ã£o SÃ£o Lucas - Centro de Ensino e Pesquisa, Aracaju, SE - Brazil.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <Language>por</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2019</Year>
+                <Month>07</Month>
+                <Day>18</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>Brazil</Country>
+            <MedlineTA>Arq Bras Cardiol</MedlineTA>
+            <NlmUniqueID>0421031</NlmUniqueID>
+            <ISSNLinking>0066-782X</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2018</Year>
+                <Month>06</Month>
+                <Day>25</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2018</Year>
+                <Month>10</Month>
+                <Day>24</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2019</Year>
+                <Month>7</Month>
+                <Day>25</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2019</Year>
+                <Month>7</Month>
+                <Day>25</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2019</Year>
+                <Month>7</Month>
+                <Day>25</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>aheadofprint</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">31340237</ArticleId>
+            <ArticleId IdType="pii">S0066-782X2019005001204</ArticleId>
+            <ArticleId IdType="doi">10.5935/abc.20190124</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>
